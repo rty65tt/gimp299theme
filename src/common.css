@@ -1,0 +1,219 @@
+/* A light theme for GIMP 3.0 */
+
+/* Hint for debugging themes:
+ * first enable the GTK inspector with
+   gsettings set org.gtk.Settings.Debug enable-inspector-keybinding true
+ * then (after restarting GIMP) call it up with ctrl+shift+i
+ * or from GIMP's UI: File > Debug > Start GtkInspector
+ *
+*/
+@import url("./reset.css");
+@import url("./gimp.css");
+@import url("./menu.css");
+@import url("./button.css");
+@import url("./view.css");
+@import url("./scrollbar.css");
+@import url("./check.css");
+@import url("./entry.css");
+@import url("./notebook.css");
+@import url("./tooltip.css");
+@import url("./colorselection.css");
+@import url("./sidebar.css");
+@import url("./dialog.css");
+@import url("./combobox.css");
+@import url("./statusbar.css");
+@import url("./end.css");
+
+* {
+  /* Default text color; needed for e.g. the Prefs dialog title area,
+   * which doesn't have any more specific way to style it.
+   */
+  font-family: Ubuntu;
+  font-size:  16px;
+}
+
+*:disabled {
+  color: @disabled-fg-color;
+}
+buttom image {
+  color: rgb(128,128,128);
+}
+
+
+#image-menubar, GtkImageMenuItem {
+  background-color: @bg-color;
+  color: @fg-color;
+}
+
+/* The main image window before it has an image in it,
+ * and the buttonbar along the bottoms of dialogs.
+ * Foreground color here is the text color, not the Wilber color.
+ * background-color and background here are ignored.
+ */
+GimpDisplayShell, GimpDock, .dialog-action-box, .dialog-vbox {
+  color: @dimmed-fg-color;
+}
+
+/* Foreground color for the big Wilber in the empty image window.
+ * Again, background-color and background here are ignored.
+ */
+#gimp-canvas {
+  color: @dimmed-fg-color;
+}
+
+/* GtkTextView */
+textview text, textview {
+  background-color: @extreme-bg;
+  color: @fg-color;
+}
+/* End GtkTextView */
+
+combobox window.popup, combobox window {
+  background-image: none;
+  background-color: @widget-bg-color;
+  color: @fg-color;
+}
+
+combobox box, combobox box.linked, combobox button {
+  background-color: @bg-color;
+  color: @fg-color;
+  background-image: none;
+  border-color: @stronger-border-c;
+}
+
+/* Get rid of the outline around all tabs in the gimpcolordialog */
+GimpColorNotebook .frame {
+  border-color: @bg-color;
+}
+
+
+/* The background of many dialogs, e.g. Preferences and gimpcolordialog */
+.vertical {
+  color: @fg-color;
+  background-color: @bg-color;
+  background-image: none;
+}
+
+/* Background for many button bars and dialog titles.
+ * Also, unexpectedly, controls the prefs "Reload Current Theme" button content.
+ *
+ * Warning: setting a background-color here "breaks" the marks added by
+ * gtk_scale_add_mark() on a GtkScale. I'm still unsure why, but the conclusion
+ * is probably that it's a bad idea to set too broad background-color rules.
+ */
+.horizontal {
+  color: @fg-color;
+}
+
+/* Text buttons, e.g. the main buttons at the bottoms of dialogs,
+ * 0..100 and 0..255 at the top of gimpcolordialog,
+ * where they're inside a GimpColorSelection
+ */
+.text-button {
+  color: @fg-color;
+  background-color: @bg-color;
+  background-image: none;
+  font-weight: normal;
+  background-color: @button;
+  border-color: @button;
+  border:10px;
+}
+
+/* .flat covers the tool buttons and the buttons at the bottom
+ * of the Toolbox window.
+*/
+
+toolbutton button.flat {
+  background-color: @bg-color;
+  color: @icon;
+  border-radius: 0;
+  padding: 5px 10px;
+}
+
+toolbutton button.flat:checked {
+  background: @selected-color;
+  color: @selected-font-color;
+}
+
+/* Color the toolbox Wilber icon */
+GimpDock frame:first-child:not(label) {
+  color: @dimmed-fg-color;
+}
+/* Fix an issue with a few labels in the toolbox
+ * having their colors overwritten with Wilber's
+ */
+GimpDock frame:first-child label {
+  color: @fg-color;
+}
+
+notebook header {
+  background-color: @bg-color;
+}
+
+GimpRuler {
+  background-color: @ruler-bg;
+}
+
+paned separator {
+   background-image: none;
+   color: @border-c;
+   background-color: @border-c;
+}
+
+/* The border around a frame */
+border {
+  border: 1px;
+}
+
+/* For dropdown menus (e.g. "px" when creating a new image */
+#gtk-combobox-popup-menu {
+  background-color: @bg-color;
+  color: @fg-color;
+}
+
+/* Sidebar in File > Open */
+
+/* The background to either side of the directory buttons.
+ * The color of the buttons themselves comes from somewhere else.
+ */
+/*.sidebar-row, .sidebar-row * {
+  background-color: @bg-color;
+}
+*/
+.sidebar-row:selected, .sidebar-row:selected * {
+  background-color: @selected-color;
+  color: @selected-font-color;
+}
+
+/* Header bar */
+
+headerbar {
+  background-color: @bg-color;
+  background-image: none;
+}
+
+headerbar:backdrop * {
+  color: @disabled-fg-color;
+}
+
+/* GtkListBox widgets */
+
+list {
+  background-color: @bg-color;
+}
+
+/* GtkSwitch buttons */
+
+switch {
+  background-color: @bg-color;
+  border: 1px solid @stronger-border-c;
+}
+
+/* The switch button is quite hard to understand without color IMO. So
+ * accept a bit of color here as an exception to indicate the checked
+ * state, even though this is globally a neutral gray theme.
+ */
+switch:checked {
+  background-color:@extreme-selected-bg;
+}
+

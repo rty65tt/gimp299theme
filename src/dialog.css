@@ -1,0 +1,91 @@
+placessidebar {
+border-width: 0 1px 0 0 ;
+border-color: @tabborder;
+border-style:solid;
+}
+
+stack {
+border-width: 0 0 1px 0 ;
+border-color: @tabborder;
+border-style:solid;
+}
+
+actionbar {
+  padding : 7px 40px;
+  border-width: 1px 0 0 0;
+  border-color: @tabborder;
+  border-style: solid;
+  border-radius: 0;
+}
+
+.vertical.search-bar {
+  padding: 0 120px;
+  border-width: 0 0 1px 0;
+  border-color: @tabborder;
+  border-style: solid;
+  border-radius: 0;
+}
+.vertical.search-bar entry {
+    border: 1px solid @tabborder;
+    padding: 0 10px;
+}
+
+actionbar .text-button {
+padding : 0;
+margin: 7px 0;
+}
+
+.dialog-action-box {
+  padding: 0 30px 10px 30px;
+ }
+
+.dialog-action-box botton {
+    padding: 30px;
+ }
+
+.dialog-action-box .text-button {
+  padding: 5px 25px;
+  color: @fg-color;
+  background-color: @button;
+}
+
+popover {
+border-width: 1px;
+background-color: @bg-color;
+padding:0;
+margin:0;
+}
+
+popover .flat{
+border-width: 0px;
+border-radius:3px;
+padding:0 17px;
+}
+
+popover .flat:hover {
+background-color: @selected-color;
+color: @selected-font-color;
+}
+
+treeview header button {
+border-width: 0 1px 1px 0 ;
+border-color: @tabborder;
+border-style:solid;
+}
+
+scrolledwindow {
+border-width: 0 1px 0 0 ;
+border-color: @tabborder;
+border-style:solid;
+}
+
+treeview {
+border-width: 0 0 1px 0 ;
+border-color: @tabborder;
+border-style:solid;
+}
+
+
+dialog spinbutton {
+  margin:3px 0;
+}

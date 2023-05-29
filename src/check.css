@@ -1,0 +1,66 @@
+checkbutton * {
+  border: 0;
+  background-color: @bg-color;
+}
+checkbutton, radiobutton {
+  color: @fg-color;
+  background-color: @bg-color;
+  border-color: @bg-color;
+  font-weight: normal;
+  border-width: 0;
+}
+
+/* Checkboxes */
+checkbutton, radiobutton {
+  color: @fg-color;
+  background-color: @bg-color;
+  font-weight: normal;
+}
+
+checkbutton check, radiobutton radio {
+  background-image: none;
+  border: 1px solid @stronger-border-c;
+}
+
+radiobutton radio {
+  background-color: @extreme-selected-bg;
+  border: 1px solid @stronger-border-c;
+  color: @extreme-selected-fg;
+}
+
+checkbutton check {
+  background-color: @extreme-selected-fg;
+  color: @extreme-selected-fg;
+
+}
+
+checkbutton check:checked {
+  background-color: @extreme-selected-bg;
+  color: @extreme-selected-fg;
+}
+
+check {
+  border: 0;
+  background-color: @bg-color;
+  color: @extreme-selected-fg;
+}
+
+check:checked {
+  background-color: @extreme-selected-bg;
+  color: @extreme-selected-fg;
+}
+checkbutton label {
+  /*font-weight: bold;*/
+  padding-left: 5px;
+}
+checkbutton:checked label, radiobutton:checked label {
+  /*font-weight: bold;*/
+}
+
+/* Some plugins have radio buttons, e.g. Fractal Explorer */
+radio {
+  background-image: none;
+  background-color: @extreme-selected-bg;
+  border: 1px solid @stronger-border-c;
+  color: @extreme-selected-fg;
+}

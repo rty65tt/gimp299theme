@@ -1,0 +1,29 @@
+
+scrollbar {
+  border: 2px solid @border-c;
+  background-color: @scrollbar-trough;
+  margin-left: 2px;
+}
+
+/*
+Worth trying for always-visible scrollbar:
+https://stackoverflow.com/questions/52414202/gtkscrolledwindow-how-to-always-show-the-overlay-scrollbar
+Doesn't seem to work here, though.
+ */
+
+scrollbar trough {
+  background: @scrollbar-trough;
+}
+
+scrollbar slider {
+  background: @scrollbar-slider;
+  border: 2px solid @border-c;
+}
+
+/* Removes black border around scrolled windows */
+scrolledwindow viewport grid {
+   border-radius: 1px;
+   border: 0px solid @bg-color;
+}
+
+

@@ -1,0 +1,43 @@
+
+statusbar {
+background-color: @statusbar;
+color:@statusbar-font;
+min-height: 16px;
+}
+
+statusbar .combo {
+padding:0 7px;
+background-color: @scombo;
+border-radius:0px;
+border-width: 0;
+border-color: @scombo;
+border-style: solid;
+color:@statusbar-font;
+}
+
+entry.combo {
+padding:7px;
+min-width: 50px;
+}
+
+statusbar  combobox {
+  margin:0 24px;
+}
+
+statusbar .combo box {
+background-color: @scombo;
+color:@statusbar-font;
+}
+statusbar label {
+  padding: 0 7px;
+  color:@combobox-font;
+}
+
+statusbar label:first-child {
+min-width: 180px;
+}
+
+statusbar .flat.toggle image {
+margin-right: 4px;
+color: @combobox-font;
+}

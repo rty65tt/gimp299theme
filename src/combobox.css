@@ -1,0 +1,20 @@
+.combo {
+padding:0 4px 0 4px ;
+background-color: @combobox;
+border-radius: 3px;
+border:1px solid @combobox;
+/*font-weight: bold;*/
+}
+.combo box {
+background-color: @combobox;
+color:@combobox-font;
+}
+/*
+.combo * {
+font-weight: bold;
+}
+*/
+
+button.combo:disabled *, button.combo:disabled image {
+  color: rgb(175,51,11);
+}

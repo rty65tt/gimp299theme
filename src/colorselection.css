@@ -1,0 +1,52 @@
+/* Color history buttons in the color chooser.
+ * The selector GimpColorHistory button gets the color buttons
+ * but not the + button; GimpColorSelection gets both.
+ */
+
+GimpColorSelection button {
+  background: @bg-color;
+  border: 2px solid @selected-color;
+  border: 0;
+  color: @icon;
+}
+
+GimpColorSelection button:hover {
+  background: @bg-color;
+}
+
+GimpColorSelection entry  {
+  background: @bg-color;
+  border-radius: 5px;
+  border: 2px solid @selected-color;
+  padding: 0 7px;
+}
+
+GimpColorSelection entry:focus  {
+  border: 2px solid @selected-color;
+}
+
+GimpColorSelection menuitem {
+  color: @menu-fg;
+  background-color: @menu-bg;
+  padding: 4px 12px;
+}
+
+GimpColorSelection menuitem:first-child {
+  padding-top: 10px;
+}
+
+GimpColorSelection menuitem:last-child {
+  padding-bottom: 10px;
+}
+
+GimpColorSelection menuitem:hover {
+  color: @selected-font-color;
+  background-color: @selected-color;
+  padding: 4px 12px;
+}
+ GimpColorHistory button {
+    padding: 1px;
+    min-width: 50px;
+    border: 0;
+}
+

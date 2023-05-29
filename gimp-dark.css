@@ -1,0 +1,82 @@
+/* Dark variant for the Default theme for GIMP 3.0 */
+
+/* Hint for debugging themes:
+ * first enable the GTK inspector with
+   gsettings set org.gtk.Settings.Debug enable-inspector-keybinding true
+ * then (after restarting GIMP) call it up with ctrl+shift+i
+ * or from GIMP's UI: File > Debug > Start GtkInspector
+ */
+
+/* Basic foreground, background and border colors. */
+@define-color fg-color               rgb(180, 180, 180);
+@define-color bg-color               rgb(30, 30, 30);
+@define-color list-bg                rgb(30, 30, 30);
+@define-color tabborder              rgb(27,27,27);
+
+@define-color button                 rgb(51, 51, 51);
+@define-color combobox               rgb(211,111,11);
+@define-color combobox-font          rgb(255,255,255);
+@define-color combo-disabled-color   rgb(0,0,0);
+
+@define-color statusbar              rgb(0,50,150);
+@define-color statusbar-font         rgb(215,215,215);
+@define-color scombo                 rgb(211,111,11);
+@define-color entry                 rgb(45,45,45);
+
+@define-color icon                   rgb(100, 100, 100);
+
+/********* Variants for foreground colors *********/
+/* In places where we want not as strongly contrasted text. */
+@define-color dimmed-fg-color        rgb(255, 255, 255);
+/* Disabled items, such as disabled actions in menus. */
+@define-color disabled-fg-color      rgb(145,145,145);
+/* Disabled buttons are dimmed even more (text needs to still be
+ * readable, but buttons design are usually enough. */
+@define-color disabled-button-color  rgb(50,50,50);
+
+/********* Variants for background colors *********/
+/* Background color for hovered items to "stick out". */
+@define-color hover-color            rgb(5,5,5);
+/* Background color when we want widgets-in-widgets to differenciate. It
+ * will usually be "less extreme", i.e. darker on a light theme, or
+ * lighter on a dark theme.
+ */
+@define-color widget-bg-color        rgb(35,35,35);
+/* Color for selected items, in particular when their usual background
+ * color is @widget-bg-color or @bg-color. It will usually be ligher on
+ * a light theme, or darker on a dark theme.
+ */
+@define-color progress-color         rgb(20, 75, 80);
+@define-color selected-color         rgb(21, 83, 158);
+@define-color selected-font-color    rgb(255,255,255);
+
+/* Background color more extreme in the theme tendency, i.e. darker on a
+ * dark theme, ligther on a light theme. */
+@define-color extreme-bg       rgb(20,20,20);
+/* Color for a selected item to "stick out" when @extreme-bg is
+ * used. It will usually be darker than @bg-color on a light theme,
+ * lighter on a dark theme.
+ */
+@define-color extreme-selected-bg      rgb(21, 83, 158);
+@define-color extreme-selected-fg      rgb(255,255,255);
+
+/********* Variants for border colors *********/
+@define-color border-c               rgb(35, 35, 35);
+@define-color strong-border-c        rgb(50, 50, 50);
+@define-color stronger-border-c      rgb(75, 75, 75);
+
+/********* Colors for special cases *********/
+@define-color scrollbar-slider  rgb(75,75,75);
+@define-color scrollbar-trough  rgb(25,25,25);
+
+@define-color ruler-fg            rgb(125,125,125);
+@define-color ruler-bg            rgb(45,45,45);
+
+@define-color tooltip-bg          rgb(175,175,175);
+
+@define-color menu-fg           rgb(200,200,200);
+@define-color menu-bg           rgb(31,31,31);
+
+
+/********* Imports *********/
+@import url("./src/common.css");

@@ -1,0 +1,61 @@
+
+entry {
+  color: @fg-color;
+  border-color: @bg-color;
+  border-width: 0;
+  border-radius: 3px;
+  padding:0 7px;
+  margin: 1px;
+}
+
+/* Spinbuttons: there are two kinds:
+ * spinbutton, spinbutton button
+ *   e.g. the "width" field in the New Image dialog.
+ *   spinbutton button.down, spinbutton button.up can be styled separately,
+ *   as can spinbutton entry.
+ *
+ * GimpSpinScale also has button.up, button.down and entry under it,
+ *   plus GimpSpinScale entry progress.
+ *
+ * Mostly the inherited values seem pretty good for both of these,
+ * so they're not overridden.
+ */
+
+
+spinbutton, entry {
+  /* Borders are a bit darker, but not too dark. */
+  /*border-color: @strong-border-c;*/
+  border-color:  @bg-color;
+  background-color:@entry;
+}
+
+
+GimpSpinScale entry progress {
+  background-color: @progress-color;
+  color: @extreme-selected-fg;
+  border-color: @extreme-selected-bg;
+  border-width: 0px;
+  border-radius: 3px;
+  padding: 0px;
+  margin: 0px;
+}
+
+spinbutton entry {
+    border-radius: 3px;
+}
+
+GimpSpinScale entry {
+    /* Important: prevent overhigh spin scale */
+    min-height: 16px;
+}
+
+GimpSpinScale button {
+    /* Makes the +- buttons a bit more compact. */
+    padding: 0 1px 0 1px;
+    background-color: @bg-color;
+    color: @icon;
+}
+
+entry.italic {
+    font-style: italic;
+}

@@ -1,0 +1,27 @@
+/* TreeViews, e.g. in a file picker or the Prefs dialog */
+.view {
+  background-color: @list-bg;
+  color: @fg-color;
+/*  border: 1px solid @widget-bg-color;*/
+}
+
+/* Selected items in a treeview list. */
+.view:selected {
+  background-color: @extreme-selected-bg;
+  color: @extreme-selected-fg;
+}
+
+.view:disabled {
+  color: @disabled-fg-color;
+}
+
+/* Selected text in a treeview cell (e.g. layer name in edition mode). */
+.view selection {
+  background-color: @fg-color;
+  color: @bg-color;
+}
+
+.view header button {
+  background-color: @bg-color;
+  border: 1px solid @stronger-border-c;
+}

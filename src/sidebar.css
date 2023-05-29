@@ -1,0 +1,14 @@
+
+
+.sidebar-row {
+background-color: @bg-color;
+}
+
+.sidebar-icon {
+      margin: 0 5px 0 12px;
+      color:@icon;
+}
+
+.sidebar-label {
+
+}

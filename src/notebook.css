@@ -1,0 +1,41 @@
+notebook {
+min-width:228px
+}
+notebook, notebook * {
+  border-width:0;
+  border-color: @bg-color;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Use this to make a border or padding around each tab */
+notebook header tabs tab {
+  color: @icon;
+  padding: 0px 0px;
+  margin: 0px;
+  background-color: @widget-bg-color;
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: @tabborder;
+}
+
+notebook header tabs tab:first-child {
+  margin-left: 2px;
+}
+
+/* The underline for selected tabs */
+notebook header tabs tab:checked {
+  color: @selected-font-color;
+  background-color: @selected-color;
+ /* box-shadow: 0 -4px @stronger-border-c inset;*/
+}
+
+/* The tabs above the color selector */
+notebook stack {
+  border-radius: 0;
+  background-color: @bg-color;
+  border:0;
+  padding: 0;
+  margin: 0;
+}

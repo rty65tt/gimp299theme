@@ -6,6 +6,7 @@ entry {
   border-radius: 3px;
   padding:0 7px;
   margin: 1px;
+  min-height: 16px;
 }
 
 /* Spinbuttons: there are two kinds:

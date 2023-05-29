@@ -3,6 +3,8 @@ padding:0 4px 0 4px ;
 background-color: @combobox;
 border-radius: 3px;
 border:1px solid @combobox;
+caret-color: @combocaret;
+min-height: 16px;
 /*font-weight: bold;*/
 }
 .combo box {

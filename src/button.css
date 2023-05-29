@@ -2,9 +2,10 @@
 button, button selection {
   background-image: none;
   text-shadow: 0 0;
-  box-shadow: 0 0;
+  box-shadow: none;
   border: 0;
   padding: 0px 10px;
+  min-height: 16px;
 }
 
 .view button {
@@ -56,3 +57,11 @@ GimpToolDialog button {
   background-color: @button;
 }
 
+button image {
+  color: @icon;
+}
+button:checked image{
+  background: @selected-color;
+  color: @selected-font-color;
+
+}

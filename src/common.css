@@ -28,8 +28,12 @@
   /* Default text color; needed for e.g. the Prefs dialog title area,
    * which doesn't have any more specific way to style it.
    */
-  font-family: Ubuntu;
+  /*font-family: Ubuntu;*/
   font-size:  16px;
+  box-shadow: none;
+  outline-offset: -3px;
+  outline-width: 0px;
+  outline-style: solid;
 }
 
 *:disabled {
@@ -117,6 +121,7 @@ GimpColorNotebook .frame {
   background-color: @button;
   border-color: @button;
   border:10px;
+  background-color: @bg-color;
 }
 
 /* .flat covers the tool buttons and the buttons at the bottom
@@ -215,5 +220,6 @@ switch {
  */
 switch:checked {
   background-color:@extreme-selected-bg;
+  border: 1px solid @extreme-selected-bg;
 }
 

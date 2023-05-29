@@ -9,16 +9,23 @@ GimpColorSelection button {
   border: 0;
   color: @icon;
 }
-
+/*
 GimpColorSelection button:hover {
   background: @bg-color;
 }
-
+*/
 GimpColorSelection entry  {
   background: @bg-color;
   border-radius: 5px;
   border: 2px solid @selected-color;
   padding: 0 7px;
+}
+button.radio.text-button {
+  background-color:@button;
+}
+button.radio.text-button:checked {
+  background: @selected-color;
+  color: @selected-font-color;
 }
 
 GimpColorSelection entry:focus  {

@@ -17,11 +17,14 @@
 @define-color combobox               rgb(211,111,11);
 @define-color combobox-font          rgb(21,21,11);
 @define-color combo-disabled-color   rgb(111,11,0);
+@define-color combocaret              rgb(0,0,0);
 
 @define-color statusbar              rgb(115,143,164);
 @define-color statusbar-font         rgb(30,30,30);
 @define-color scombo                 rgb(211,111,11);
+@define-color scombo-font            rgb(0,0,0);
 @define-color entry                 rgb(211,211,211);
+@define-color scaret                 rgb(0,0,0);
 
 @define-color icon                   rgb(100, 100, 100);
 

@@ -3,6 +3,7 @@ statusbar {
 background-color: @statusbar;
 color:@statusbar-font;
 min-height: 16px;
+caret-color: @scaret;
 }
 
 statusbar .combo {
@@ -12,11 +13,11 @@ border-radius:0px;
 border-width: 0;
 border-color: @scombo;
 border-style: solid;
-color:@statusbar-font;
+color:@scombo-font;
 }
 
 entry.combo {
-padding:7px;
+padding:0 7px;
 min-width: 50px;
 }
 
@@ -26,11 +27,11 @@ statusbar  combobox {
 
 statusbar .combo box {
 background-color: @scombo;
-color:@statusbar-font;
+color:@scombo-font;
 }
 statusbar label {
   padding: 0 7px;
-  color:@combobox-font;
+  color:@statusbar-font;
 }
 
 statusbar label:first-child {

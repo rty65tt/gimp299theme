@@ -11,7 +11,7 @@
 @define-color fg-color               rgb(180, 180, 180);
 @define-color bg-color               rgb(30, 30, 30);
 @define-color list-bg                rgb(30, 30, 30);
-@define-color tabborder              rgb(27,27,27);
+@define-color tabborder              rgb(40,40,40);
 
 @define-color button                 rgb(51, 51, 51);
 @define-color combobox               rgb(211,111,11);
@@ -79,6 +79,11 @@
 
 @define-color menu-fg           rgb(200,200,200);
 @define-color menu-bg           rgb(31,31,31);
+
+/******* TreeView *****************/
+@define-color view-bg           rgb(155,155,155);
+@define-color view-fg           rgb(5,5,5);
+@define-color view-border        rgb(136,136,136);
 
 
 /********* Imports *********/

@@ -81,6 +81,10 @@
 @define-color menu-fg           rgb(0,0,0);
 @define-color menu-bg           rgb(200,200,200);
 
+/******* TreeView *****************/
+@define-color view-bg           rgb(155,155,155);
+@define-color view-fg           rgb(5,5,5);
+@define-color view-border        rgb(136,136,136);
 
 /********* Imports *********/
 @import url("./src/common.css");

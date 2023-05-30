@@ -1,0 +1,1 @@
+# gimp299theme

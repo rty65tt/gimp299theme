@@ -17,13 +17,15 @@
 @define-color combobox               rgb(211,111,11);
 @define-color combobox-font          rgb(21,21,11);
 @define-color combo-disabled-color   rgb(111,11,0);
-@define-color combocaret              rgb(0,0,0);
+@define-color combocaret             rgb(0,0,0);
+
+@define-color switch-color           rgb(53, 132, 228);
 
 @define-color statusbar              rgb(115,143,164);
 @define-color statusbar-font         rgb(30,30,30);
 @define-color scombo                 rgb(211,111,11);
 @define-color scombo-font            rgb(0,0,0);
-@define-color entry                 rgb(211,211,211);
+@define-color entry                  rgb(211,211,211);
 @define-color scaret                 rgb(0,0,0);
 
 @define-color icon                   rgb(100, 100, 100);
@@ -68,6 +70,7 @@
 @define-color border-c           rgb(212,212,212);
 @define-color strong-border-c    rgb(200,200,200);
 @define-color stronger-border-c  rgb(185,185,185);
+@define-color paned-separator    rgb(225,225,225);
 
 /********* Colors for special cases *********/
 @define-color scrollbar-slider rgb(150,150,150);
@@ -80,11 +83,15 @@
 
 @define-color menu-fg           rgb(0,0,0);
 @define-color menu-bg           rgb(200,200,200);
-
+@define-color check-off         rgb(180,180,180);
 /******* TreeView *****************/
 @define-color view-bg           rgb(155,155,155);
 @define-color view-fg           rgb(5,5,5);
-@define-color view-border        rgb(136,136,136);
+@define-color view-border       rgb(136,136,136);
+
+
+/************ Toolbutton ****************/
+@define-color toolbutton-color  rgb(100, 100, 100);
 
 /********* Imports *********/
 @import url("./src/common.css");

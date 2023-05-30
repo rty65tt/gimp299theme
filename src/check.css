@@ -29,9 +29,8 @@ radiobutton radio {
 }
 
 checkbutton check {
-  background-color: @extreme-selected-fg;
+  background-color: @stronger-border-c;
   color: @extreme-selected-fg;
-
 }
 
 checkbutton check:checked {
@@ -40,8 +39,7 @@ checkbutton check:checked {
 }
 
 check {
-  border: 0;
-  background-color: @bg-color;
+  background-color: @stronger-border-cf;
   color: @extreme-selected-fg;
 }
 

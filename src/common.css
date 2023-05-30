@@ -127,6 +127,9 @@ GimpColorNotebook .frame {
 /* .flat covers the tool buttons and the buttons at the bottom
  * of the Toolbox window.
 */
+toolbutton {
+  color:@toolbutton-color;
+}
 
 toolbutton button.flat {
   background-color: @bg-color;
@@ -161,8 +164,8 @@ GimpRuler {
 
 paned separator {
    background-image: none;
-   color: @border-c;
-   background-color: @border-c;
+   color: @paned-separator;
+   background-color: @paned-separator;
 }
 
 /* The border around a frame */
@@ -219,7 +222,7 @@ switch {
  * state, even though this is globally a neutral gray theme.
  */
 switch:checked {
-  background-color:@extreme-selected-bg;
-  border: 1px solid @extreme-selected-bg;
+  background-color:@switch-color;
+  border: 1px solid @switch-color;
 }
 

@@ -1,4 +1,3 @@
-
 /* Top menu items  */
 
 menubar > menuitem {
@@ -9,16 +8,10 @@ menubar > menuitem {
 menuitem menuitem {
   color: @menu-fg;
   background: @menu-bg;
-  padding: 4px 12px;
+  padding: 3px 12px;
 }
-
-menuitem {
-  color: @menu-fg;
-  background: @menu-bg;
-  padding: 4px 12px;
-}
-
 menuitem check {
+  background: @check-off;
   margin-right: 10px;
 }
 menuitem check:hover {
@@ -28,7 +21,6 @@ menuitem check:checked {
   background-color: @extreme-selected-bg;
   color: @extreme-selected-fg;
 }
-
 /* A top (File, Edit) menubar item when its menu is expanded. */
 menubar > menuitem:hover {
   color: @selected-font-color;
@@ -42,14 +34,20 @@ menuitem *:hover {
 
 /* "Add Tab" menu in dockable dialog */
 menu {
-  background-color: @bg-color;
-  color: @fg-color;
+  background-color: @menu-bg;
+  color: @menu-fg;
+  border: 1px solid @menu-bg;
+
 }
 
 /* Fixes issue with top menu label not changing
  * colors when highlighted
  */
 menu box {
+  color: @menu-fg;
   background-color: transparent;
 }
 
+menu .horizontal {
+  color: @menu-fg;
+}

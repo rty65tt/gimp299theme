@@ -27,7 +27,7 @@ spinbutton, entry {
   /* Borders are a bit darker, but not too dark. */
   /*border-color: @strong-border-c;*/
   border-color:  @bg-color;
-  background-color:@entry;
+  background-color: @entry;
 }
 
 

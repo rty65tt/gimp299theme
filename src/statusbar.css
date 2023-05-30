@@ -39,6 +39,6 @@ min-width: 180px;
 }
 
 statusbar .flat.toggle image {
-margin-right: 4px;
-color: @combobox-font;
+margin-right: 14px;
+color: @statusbar-font;
 }

@@ -42,7 +42,7 @@ margin: 7px 0;
 
 .dialog-action-box {
   border-top: 1px solid @tabborder;
-  padding: 0 30px 10px 30px;
+  /*padding: 0 30px 10px 30px;*/
  }
 
 .dialog-action-box botton {
@@ -85,5 +85,5 @@ scrolledwindow treeview {
 
 dialog spinbutton, dialog combobox {
 margin:3px 6px 3px 0;
-min-height: 16px;
+min-height:28px;
 }

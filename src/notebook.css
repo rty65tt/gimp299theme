@@ -4,9 +4,9 @@ min-width:228px
 notebook, notebook * {
   border-width:0;
   border-color: @bg-color;
-    border: 0;
-    padding: 0;
-    margin: 0;
+  border: 0 solid @bg-color;
+  padding: 0;
+  margin: 0;
 }
 
 /* Use this to make a border or padding around each tab */

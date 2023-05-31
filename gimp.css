@@ -14,12 +14,33 @@
 @define-color tabborder              rgb(212, 212, 212);
 
 @define-color button                 rgb(211,211,211);
-@define-color combobox               rgb(211,111,11);
+
+
+/********** ComboBox **********************************/
+@define-color cbv1 rgb(211,111,11);
+@define-color cbv2 rgb(101, 184, 76);
+@define-color cbv3 rgb(211, 91, 11);
+@define-color cbv4 rgb(8, 148, 8);
+@define-color cbv5 rgb(148, 133, 8);
+@define-color cbv6 rgb(87, 214, 163);
+@define-color cbv7 rgb(211, 211, 211);
+@define-color cbv8 rgb(232, 129, 141);
+@define-color cbv9 rgb(244, 192, 181);
+
+@define-color selv1 rgb(53, 132, 228);
+@define-color selv2 rgb(144, 11, 211);
+@define-color selv3 rgb(11, 61, 211);
+@define-color selv4 rgb(75, 89, 175);
+@define-color selv5 rgb(148, 64, 8);
+@define-color selv6 rgb(214, 102, 167);
+@define-color selcolor @selv4;
+
+@define-color combobox               @cbv7;
 @define-color combobox-font          rgb(21,21,11);
 @define-color combo-disabled-color   rgb(111,11,0);
 @define-color combocaret             rgb(0,0,0);
 
-@define-color switch-color           rgb(53, 132, 228);
+@define-color switch-color           @selcolor;
 
 @define-color statusbar              rgb(115,143,164);
 @define-color statusbar-font         rgb(30,30,30);
@@ -29,6 +50,8 @@
 @define-color scaret                 rgb(0,0,0);
 
 @define-color icon                   rgb(100, 100, 100);
+@define-color img-button             rgb(200, 200, 200);
+@define-color img-button-check       rgb(0, 0, 0);
 
 /********* Variants for foreground colors *********/
 /* In places where we want not as strongly contrasted text. */
@@ -52,7 +75,7 @@
  * a light theme, or darker on a dark theme.
  */
 @define-color progress-color         rgb(150, 200, 180);
-@define-color selected-color         rgb(53, 132, 228);
+@define-color selected-color         @selcolor;
 @define-color selected-font-color    rgb(255,255,255);
 
 /* Background color more extreme in the theme tendency, i.e. darker on a
@@ -63,7 +86,7 @@
  * used. It will usually be darker than @bg-color on a light theme,
  * ligher on a dark theme.
  */
-@define-color extreme-selected-bg      rgb(53, 132, 228);
+@define-color extreme-selected-bg      @selcolor;
 @define-color extreme-selected-fg      rgb(255,255,255);
 
 /********* Variants for border colors *********/
@@ -83,12 +106,13 @@
 
 @define-color menu-fg           rgb(0,0,0);
 @define-color menu-bg           rgb(200,200,200);
+@define-color menu-separator    rgb(180,180,180);
 @define-color check-off         rgb(150,150,150);
+
 /******* TreeView *****************/
 @define-color view-bg           rgb(155,155,155);
 @define-color view-fg           rgb(5,5,5);
 @define-color view-border       rgb(136,136,136);
-
 
 /************ Toolbutton ****************/
 @define-color toolbutton-color  rgb(100, 100, 100);

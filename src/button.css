@@ -77,9 +77,13 @@ button image {
   color: @icon;
 }
 
-button:checked image{
+button.flat.toggle image {
+  color: @img-button;
+}
+
+button.flat.toggle:checked image{
   background: @bg-color;
-  color: @fg-color;
+  color: @img-button-check;
 }
 
 GimpDock .flat.image-button.toggle:checked {

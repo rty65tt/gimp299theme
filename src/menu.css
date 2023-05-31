@@ -37,13 +37,9 @@ menuitem *:hover {
 }
 
 /* "Add Tab" menu in dockable dialog */
-menu {
-  background-color: @menu-bg;
-  color: @menu-fg;
-/*  border: 1px solid @menu-bg;*/
-}
 
 menu {
+color: @menu-fg;
 border-radius:8px;
 border:1px solid rgb(180,180,180);
 background-color: @menu-bg;
@@ -77,16 +73,23 @@ menubar > menuitem > window > menu {
   border-top-right-radius: 0;
   padding-top: 0px;
 }
-menuitem arrowm, menu arrow {
+menuitem arowm, menu arrow {
   color: @icon;
   background-color: @menu-bg;
 }
 menuitem:hover > arrow {
   color: @selected-font-color;
+  background: @extreme-selected-bg;
+}
+combobox window {
+border-radius:8px;
+}
+combobox menu separator {
+background-color: @menu-separator;
 }
 
 combobox menu menuitem {
-background-color: @menu-bg;
+background-color: @menu-separator;
 padding: 2px 2px;
 }
 

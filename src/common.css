@@ -127,7 +127,7 @@ GimpColorNotebook .frame {
 /* .flat covers the tool buttons and the buttons at the bottom
  * of the Toolbox window.
 */
-toolbutton {
+toolbutton button.flat.image-button.toggle image{
   color:@toolbutton-color;
 }
 

@@ -40,7 +40,14 @@ menuitem *:hover {
 menu {
   background-color: @menu-bg;
   color: @menu-fg;
-  border: 1px solid @menu-bg;
+/*  border: 1px solid @menu-bg;*/
+}
+
+menu {
+border-radius:8px;
+border:1px solid rgb(180,180,180);
+background-color: @menu-bg;
+padding: 8px 0;
 }
 
 /* Fixes issue with top menu label not changing
@@ -55,38 +62,35 @@ menu .horizontal {
   color: @menu-fg;
 }
 
-menu {
-color: @menu-fg;
-border-radius:8px;
-border:1px solid rgb(180,180,180);
-background-color: @menu-bg;
-padding: 8px 0;
-
-}
-
 menu menuitem {
 color: @menu-fg;
-padding: 3px 8px;
+padding: 2px 8px;
+background-color: @menu-bg;
 }
 menu menuitem:hover {
 color: @selected-font-color;
-padding: 3px 8px;
+padding: 2px 8px;
 }
 
 menubar > menuitem > window > menu {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  padding-top: 8px;
+  padding-top: 0px;
 }
-menuitem arrow {
+menuitem arrowm, menu arrow {
   color: @icon;
+  background-color: @menu-bg;
 }
 menuitem:hover > arrow {
   color: @selected-font-color;
 }
 
+combobox menu menuitem {
+background-color: @menu-bg;
+padding: 2px 2px;
+}
 
-.csd.popup {
-  color: rgb(100,00,255);
-  background-color: rgb(100,100,0);
+combobox menu menuitem:hover{
+background-color: @selected-color;
+padding: 2px 2px;
 }

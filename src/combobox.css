@@ -32,16 +32,6 @@ background-color: @combobox;
 color:@combobox-font;
 margin: 0;
 }
-/*
-combobox menu menuitem {
-background-color: @menu-bg;
-padding: 2px 12px;
-}
-*/
-combobox menu menuitem:hover{
-background-color: @selected-color;
-padding: 2px 12px;
-}
 
 .combo:disabled *, .combo:disabled image {
   color: rgb(175,51,11);

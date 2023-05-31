@@ -74,7 +74,7 @@ textview text, textview {
 
 combobox window.popup, combobox window {
   background-image: none;
-  background-color: @widget-bg-color;
+  background-color: @menu-bg;
   color: @fg-color;
 }
 
@@ -175,7 +175,7 @@ border {
 
 /* For dropdown menus (e.g. "px" when creating a new image */
 #gtk-combobox-popup-menu {
-  background-color: @bg-color;
+  background-color: @menu-bg;
   color: @fg-color;
 }
 

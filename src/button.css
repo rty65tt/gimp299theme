@@ -8,6 +8,19 @@ button, button selection {
   min-height: 16px;
 }
 
+button.flat.radio {
+  padding: 5px 5px;
+}
+
+button.flat.radio:checked {
+  background-color:  rgb(150,150,150);
+}
+
+button.flat.radio:checked image {
+background-color:  rgb(150,150,150);
+color: rgb(0,0,0);
+}
+
 .view button {
  /* background-color: @bg-color;*/
   border-color: @border-c;
@@ -78,3 +91,4 @@ GimpDock .flat.image-button.toggle:checked image{
   background: @selected-color;
   color: @selected-font-color;
 }
+

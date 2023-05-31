@@ -36,6 +36,6 @@ border-bottom:1px solid @view-border;
 */
 .view header button {
 background-color: @tabborder;
-border: 1px solid @bg-color;
+border: 1px solid @treeview-bg;
 border-radius:5px;
 }

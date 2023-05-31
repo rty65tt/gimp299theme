@@ -113,8 +113,18 @@
 @define-color view-fg           rgb(5,5,5);
 @define-color view-border       rgb(136,136,136);
 
+@define-color treeview-bg           rgb(25,25,25);
+@define-color treeview-fg           rgb(190,190,190);
+@define-color treeview-border       rgb(35,35,35);
+
+
 /************ Toolbutton ****************/
 @define-color toolbutton-color  rgb(100, 100, 100);
+
+/************ Path Bar ****************/
+@define-color pathbar-color   @combobox;
+@define-color pathbar-select  rgb(175, 175, 175);
+@define-color pathbar-font    rgb(0, 0, 0);
 
 /********* Imports *********/
 @import url("./src/common.css");

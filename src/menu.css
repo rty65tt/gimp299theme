@@ -73,9 +73,13 @@ menubar > menuitem > window > menu {
   border-top-right-radius: 0;
   padding-top: 0px;
 }
-menuitem arowm, menu arrow {
+menuitem arrow, menu arrow {
   color: @icon;
   background-color: @menu-bg;
+}
+menuitem:hover {
+  color: @selected-font-color;
+  background: @extreme-selected-bg;
 }
 menuitem:hover > arrow {
   color: @selected-font-color;
@@ -97,3 +101,36 @@ combobox menu menuitem:hover{
 background-color: @selected-color;
 padding: 2px 2px;
 }
+
+
+popover, popover>box.vertical, popover modebutton, popover label, separator{
+background-color:@menu-bg;
+color:@menu-fg;
+}
+modelbutton {
+border-radius:0;
+}
+modelbutton check, modelbutton image, modelbutton check{
+  background: @check-off;
+  margin-left: 10px;
+  color: @icon;
+}
+
+modelbutton check, modelbutton image, modelbutton check{
+  background: @check-off;
+  margin-left: 10px;
+  color: @icon;
+}
+
+
+popover box separator.horisontal {
+background-color:@menu-bg;
+color:@menu-bg;
+/*border:3px solid @bg-color;*/
+}
+
+modelbutton:hover *{
+background-color:@selected-color;
+color:@selected-font-color;
+}
+

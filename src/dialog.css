@@ -1,3 +1,18 @@
+dialog treeview.view {
+background-color: @treeview-bg;
+border-bottom:0px solid @treeview-border;
+color:@treeview-fg;
+}
+
+dialog scrolledwindow.frame {
+border-radius:6px;
+border-width:6px 0;
+border-style: solid;
+border-color:@treeview-bg;
+/*border-color:@treeview-fg;]
+padding:2px 0;*/
+}
+
 placessidebar {
 border-width: 0 1px 0 0 ;
 border-color: @tabborder;
@@ -32,7 +47,7 @@ background-color: @bg-color;
 }
 .vertical.search-bar entry {
     border: 1px solid @tabborder;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 actionbar .text-button {
@@ -57,7 +72,7 @@ margin: 7px 0;
 
 popover {
 border-width: 1px;
-background-color: @bg-color;
+background-color: @menu-bg;
 padding:0;
 margin:0;
 }

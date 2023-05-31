@@ -33,7 +33,7 @@
 @define-color selv4 rgb(75, 89, 175);
 @define-color selv5 rgb(148, 64, 8);
 @define-color selv6 rgb(214, 102, 167);
-@define-color selcolor @selv4;
+@define-color selcolor @selv1;
 
 @define-color combobox               @cbv7;
 @define-color combobox-font          rgb(21,21,11);
@@ -114,8 +114,18 @@
 @define-color view-fg           rgb(5,5,5);
 @define-color view-border       rgb(136,136,136);
 
+
+@define-color treeview-bg           rgb(225,225,225);
+@define-color treeview-fg           rgb(0,0,0);
+@define-color treeview-border       rgb(235,235,235);
+
 /************ Toolbutton ****************/
 @define-color toolbutton-color  rgb(100, 100, 100);
+
+/************ Path Bar ****************/
+@define-color pathbar-color   @combobox;
+@define-color pathbar-select  rgb(175, 175, 175);
+@define-color pathbar-font    rgb(0, 0, 0);
 
 /********* Imports *********/
 @import url("./src/common.css");

@@ -9,7 +9,7 @@ min-height: 16px;
 }
 
 entry, button {
-border-radius: 3px;
+/*border-radius: 3px;*/
 }
 
 .linked {
@@ -19,11 +19,12 @@ border-width:1px;
 border-style:solid;
 border-color:@combobox;
 background-color: @combobox;
+color: @combobox-font;
 }
 
 .linked entry, .linked button{
 background-color: @combobox;
-border-radius: 0px;
+/*border-radius: 0px;*/
 border:0px solid @combobox;
 }
 
@@ -36,4 +37,12 @@ margin: 0;
 .combo:disabled *, .combo:disabled image {
   color: rgb(175,51,11);
   text-shadow:none;
+}
+
+.linked.path-bar button {
+background-color: @pathbar-color;
+color: @pathbar-font;
+}
+.linked.path-bar button:checked {
+background-color: @pathbar-select;
 }

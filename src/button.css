@@ -52,6 +52,9 @@ button:checked {
   color: @selected-font-color;
 }
 
+button.flat.toggle:checked {
+  background: @bg-color;
+}
 
 GimpToolDialog button {
   background-color: @button;
@@ -60,8 +63,18 @@ GimpToolDialog button {
 button image {
   color: @icon;
 }
+
 button:checked image{
+  background: @bg-color;
+  color: @fg-color;
+}
+
+GimpDock .flat.image-button.toggle:checked {
   background: @selected-color;
   color: @selected-font-color;
+}
 
+GimpDock .flat.image-button.toggle:checked image{
+  background: @selected-color;
+  color: @selected-font-color;
 }

@@ -14,6 +14,10 @@ menuitem check {
   background: @check-off;
   margin-right: 10px;
 }
+menuitem radio {
+  margin-right: 8px;
+}
+
 menuitem check:hover {
   background: @bg-color;
 }
@@ -37,7 +41,6 @@ menu {
   background-color: @menu-bg;
   color: @menu-fg;
   border: 1px solid @menu-bg;
-
 }
 
 /* Fixes issue with top menu label not changing
@@ -50,4 +53,40 @@ menu box {
 
 menu .horizontal {
   color: @menu-fg;
+}
+
+menu {
+color: @menu-fg;
+border-radius:8px;
+border:1px solid rgb(180,180,180);
+background-color: @menu-bg;
+padding: 8px 0;
+
+}
+
+menu menuitem {
+color: @menu-fg;
+padding: 3px 8px;
+}
+menu menuitem:hover {
+color: @selected-font-color;
+padding: 3px 8px;
+}
+
+menubar > menuitem > window > menu {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-top: 8px;
+}
+menuitem arrow {
+  color: @icon;
+}
+menuitem:hover > arrow {
+  color: @selected-font-color;
+}
+
+
+.csd.popup {
+  color: rgb(100,00,255);
+  background-color: rgb(100,100,0);
 }

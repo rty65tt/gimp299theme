@@ -21,9 +21,18 @@ entry {
  * Mostly the inherited values seem pretty good for both of these,
  * so they're not overridden.
  */
-
-
 spinbutton, entry {
+  /* Borders are a bit darker, but not too dark. */
+  /*border-color: @strong-border-c;*/
+  border-color:  @bg-color;
+  background-color: @entry;
+}
+spinbutton button {
+  /* Borders are a bit darker, but not too dark. */
+  /*border-color: @strong-border-c;*/
+  color:  @icon;
+}
+spinbutton button:hover {
   /* Borders are a bit darker, but not too dark. */
   /*border-color: @strong-border-c;*/
   border-color:  @bg-color;

@@ -22,7 +22,7 @@
 @import url("./dialog.css");
 @import url("./combobox.css");
 @import url("./statusbar.css");
-@import url("./end.css");
+
 
 * {
   /* Default text color; needed for e.g. the Prefs dialog title area,
@@ -78,7 +78,7 @@ combobox window.popup, combobox window {
   color: @fg-color;
 }
 
-combobox box, combobox box.linked, combobox button {
+combobox box, combobox button {
   background-color: @bg-color;
   color: @fg-color;
   background-image: none;
@@ -226,3 +226,5 @@ switch:checked {
   border: 1px solid @switch-color;
 }
 
+
+@import url("./end.css");

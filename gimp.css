@@ -74,7 +74,7 @@
 
 /********* Colors for special cases *********/
 @define-color scrollbar-slider rgb(150,150,150);
-@define-color scrollbar-trough rgb(235,235,235);
+@define-color scrollbar-trough rgb(220,220,220);
 
 @define-color ruler-fg         rgb(75,75,75);
 @define-color ruler-bg         rgb(220,220,220);
@@ -83,7 +83,7 @@
 
 @define-color menu-fg           rgb(0,0,0);
 @define-color menu-bg           rgb(200,200,200);
-@define-color check-off         rgb(180,180,180);
+@define-color check-off         rgb(150,150,150);
 /******* TreeView *****************/
 @define-color view-bg           rgb(155,155,155);
 @define-color view-fg           rgb(5,5,5);

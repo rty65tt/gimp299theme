@@ -17,7 +17,8 @@ scrollbar trough {
 
 scrollbar slider {
   background: @scrollbar-slider;
-  border: 2px solid @border-c;
+  border: 0px solid @scrollbar-slider;
+  /*border: 1px solid @scrollbar-trough;*/
 }
 
 /* Removes black border around scrolled windows */

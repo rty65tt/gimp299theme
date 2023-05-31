@@ -23,11 +23,12 @@ notebook header tabs tab {
 notebook header tabs tab:first-child {
   margin-left: 2px;
 }
-
-/* The underline for selected tabs */
+notebook tab button image {
+color: @tabimg;
+}
 notebook header tabs tab:checked {
-  color: @selected-font-color;
-  background-color: @selected-color;
+  color: @ruler-fg;
+  background-color: @ruler-bg;
  /* box-shadow: 0 -4px @stronger-border-c inset;*/
 }
 

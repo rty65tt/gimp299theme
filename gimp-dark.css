@@ -72,8 +72,8 @@
 @define-color paned-separator        rgb(35,35,35);
 
 /********* Colors for special cases *********/
-@define-color scrollbar-slider  rgb(75,75,75);
-@define-color scrollbar-trough  rgb(25,25,25);
+@define-color scrollbar-slider  rgb(100,100,100);
+@define-color scrollbar-trough  rgb(45,45,45);
 
 @define-color ruler-fg          rgb(125,125,125);
 @define-color ruler-bg          rgb(45,45,45);
@@ -81,8 +81,8 @@
 @define-color tooltip-bg        rgb(175,175,175);
 
 @define-color menu-fg           rgb(00,00,00);
-@define-color menu-bg           rgb(180,180,180);
-@define-color check-off         rgb(50,50,50);
+@define-color menu-bg           rgb(200,200,200);
+@define-color check-off         rgb(150,150,150);
 
 /******* TreeView *****************/
 @define-color view-bg           rgb(155,155,155);

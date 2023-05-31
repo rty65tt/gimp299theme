@@ -81,6 +81,11 @@ button.flat.toggle image {
   color: @img-button;
 }
 
+dialog button.flat.radio image {
+  min-width:30px;
+min-height:30px;
+}
+
 button.flat.toggle:checked image{
   background: @bg-color;
   color: @img-button-check;

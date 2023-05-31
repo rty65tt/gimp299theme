@@ -124,10 +124,17 @@ GimpColorNotebook .frame {
   background-color: @bg-color;
 }
 
-/* .flat covers the tool buttons and the buttons at the bottom
- * of the Toolbox window.
-*/
-toolbutton button.flat.image-button.toggle image{
+GimpDock#gimp-internal-dock-1 > box > box {
+background-color:@paned-separator;
+}
+toolbutton  {
+color:@icon;
+}
+toolbutton button.flat.image-button.toggle  {
+  background-color:@paned-separator;
+  color:@toolbutton-color;
+}
+toolbutton button.flat.image-button.toggle image {
   color:@toolbutton-color;
 }
 
@@ -138,7 +145,7 @@ toolbutton button.flat {
   padding: 5px 10px;
 }
 
-toolbutton button.flat:checked {
+#gimp-internal-dock-1 toolbutton button.flat:checked {
   background: @selected-color;
   color: @selected-font-color;
 }

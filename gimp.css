@@ -10,7 +10,7 @@
 /* Basic foreground, background and border colors. */
 @define-color fg-color               rgb(0,0,0);
 @define-color bg-color               rgb(235,235,235);
-@define-color list-bg                rgb(225,225,225);
+@define-color list-bg                rgb(235,235,235);
 @define-color tabborder              rgb(212, 212, 212);
 
 @define-color button                 rgb(211,211,211);
@@ -37,14 +37,14 @@
 
 @define-color combobox               @cbv7;
 @define-color combobox-font          rgb(21,21,11);
-@define-color combo-disabled-color   rgb(111,11,0);
+@define-color combo-disabled-color   rgb(111,111,111);
 @define-color combocaret             rgb(0,0,0);
 
 @define-color switch-color           @selcolor;
 
 @define-color statusbar              rgb(115,143,164);
 @define-color statusbar-font         rgb(30,30,30);
-@define-color scombo                 rgb(211,111,11);
+@define-color scombo                 rgb(75,100,125);
 @define-color scombo-font            rgb(0,0,0);
 @define-color entry                  rgb(211,211,211);
 @define-color scaret                 rgb(0,0,0);

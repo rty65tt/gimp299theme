@@ -15,6 +15,11 @@ border-color: @scombo;
 border-style: solid;
 color:@scombo-font;
 }
+statusbar .combo:checked {
+background-color: @scombo;
+border-color: @scombo;
+color:@scombo-font;
+}
 
 entry.combo {
 padding:0 7px;
@@ -32,6 +37,7 @@ border-radius:0px;
 }
 statusbar combobox box.linked {
 border-radius:0px;
+border-width:0px;
 }
 
 statusbar label {
@@ -47,3 +53,4 @@ statusbar .flat.toggle image {
 margin-right: 14px;
 color: @statusbar-font;
 }
+

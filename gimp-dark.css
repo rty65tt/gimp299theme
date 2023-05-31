@@ -37,14 +37,14 @@
 
 @define-color combobox               @cbv10;
 @define-color combobox-font          rgb(0,0,0);
-@define-color combo-disabled-color   rgb(0,0,0);
+@define-color combo-disabled-color   rgb(80,80,80);
 @define-color combocaret              rgb(0,0,0);
 
 @define-color switch-color           rgb(211,111,11);
 
 @define-color statusbar              rgb(50,130,150);
 @define-color statusbar-font         rgb(0,0,0);
-@define-color scombo                 rgb(211,111,11);
+@define-color scombo                 rgb(75,100,125);
 @define-color scombo-font            rgb(0,0,0);
 @define-color entry                  rgb(45,45,45);
 @define-color scaret                 rgb(0,0,0);

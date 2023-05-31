@@ -28,7 +28,12 @@ statusbar  combobox {
 statusbar .combo box {
 background-color: @scombo;
 color:@scombo-font;
+border-radius:0px;
 }
+statusbar combobox box.linked {
+border-radius:0px;
+}
+
 statusbar label {
   padding: 0 7px;
   color:@statusbar-font;

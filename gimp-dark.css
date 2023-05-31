@@ -21,8 +21,8 @@
 
 @define-color switch-color           rgb(211,111,11);
 
-@define-color statusbar              rgb(0,50,150);
-@define-color statusbar-font         rgb(190,190,190);
+@define-color statusbar              rgb(50,130,150);
+@define-color statusbar-font         rgb(0,0,0);
 @define-color scombo                 rgb(211,111,11);
 @define-color scombo-font            rgb(0,0,0);
 @define-color entry                  rgb(45,45,45);

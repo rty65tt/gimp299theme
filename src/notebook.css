@@ -24,7 +24,7 @@ notebook header tabs tab:first-child {
   margin-left: 2px;
 }
 notebook tab button image {
-color: @tabimg;
+color: @ruler-fg;
 }
 notebook header tabs tab:checked {
   color: @ruler-fg;

@@ -12,7 +12,6 @@
 @import url("./menu.css");
 @import url("./button.css");
 @import url("./view.css");
-@import url("./scrollbar.css");
 @import url("./check.css");
 @import url("./entry.css");
 @import url("./notebook.css");
@@ -21,6 +20,7 @@
 @import url("./sidebar.css");
 @import url("./dialog.css");
 @import url("./combobox.css");
+@import url("./scrollbar.css");
 @import url("./statusbar.css");
 
 

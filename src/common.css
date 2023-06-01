@@ -124,43 +124,6 @@ GimpColorNotebook .frame {
   background-color: @bg-color;
 }
 
-GimpDock#gimp-internal-dock-1 > box > box {
-background-color:@paned-separator;
-}
-toolbutton  {
-color:@icon;
-}
-toolbutton button.flat.image-button.toggle  {
-  background-color:@paned-separator;
-  color:@toolbutton-color;
-}
-toolbutton button.flat.image-button.toggle image {
-  color:@toolbutton-color;
-}
-
-toolbutton button.flat {
-  background-color: @bg-color;
-  color: @icon;
-  border-radius: 0;
-  padding: 5px 10px;
-}
-
-#gimp-internal-dock-1 toolbutton button.flat:checked {
-  background: @selected-color;
-  color: @selected-font-color;
-}
-
-/* Color the toolbox Wilber icon */
-GimpDock frame:first-child:not(label) {
-  color: @dimmed-fg-color;
-}
-/* Fix an issue with a few labels in the toolbox
- * having their colors overwritten with Wilber's
- */
-GimpDock frame:first-child label {
-  color: @fg-color;
-}
-
 notebook header {
   background-color: @bg-color;
 }

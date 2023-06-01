@@ -52,7 +52,7 @@
 @define-color icon                   rgb(100, 100, 100);
 @define-color img-button             rgb(200, 200, 200);
 @define-color img-button-check       rgb(0, 0, 0);
-
+@define-color check-color            rgb(235, 235, 235);
 /********* Variants for foreground colors *********/
 /* In places where we want not as strongly contrasted text. */
 @define-color dimmed-fg-color        rgb(0,0,0);
@@ -121,6 +121,8 @@
 
 /************ Toolbutton ****************/
 @define-color toolbutton-color  rgb(100, 100, 100);
+@define-color toolbutton-checkbg  rgb(130, 120, 120);
+@define-color toolbutton-checkimg  rgb(235, 235, 235);
 
 /************ Path Bar ****************/
 @define-color pathbar-color   @combobox;

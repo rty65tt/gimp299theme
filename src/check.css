@@ -30,12 +30,12 @@ radiobutton radio {
 
 checkbutton check {
   background-color: @stronger-border-c;
-  color: @extreme-selected-fg;
+  color: @check-color;
 }
 
 checkbutton check:checked {
   background-color: @extreme-selected-bg;
-  color: @extreme-selected-fg;
+  color: @check-color;
 }
 
 check {

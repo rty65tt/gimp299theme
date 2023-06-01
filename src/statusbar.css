@@ -27,7 +27,9 @@ min-width: 50px;
 }
 
 statusbar  combobox {
-  margin:0 24px;
+margin:0 24px;
+padding: 0px 0 0 7px;
+background-color:@scombo;
 }
 
 statusbar .combo box {
@@ -48,9 +50,11 @@ statusbar label {
 statusbar label:first-child {
 min-width: 180px;
 }
-
 statusbar .flat.toggle image {
 margin-right: 14px;
 color: @statusbar-font;
+color: @scombo-imgicon;
 }
-
+statusbar .combo arrow {
+color: @scombo-arrow;
+}

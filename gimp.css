@@ -42,13 +42,6 @@
 
 @define-color switch-color           @selcolor;
 
-@define-color statusbar              rgb(115,143,164);
-@define-color statusbar-font         rgb(30,30,30);
-@define-color scombo                 rgb(75,100,125);
-@define-color scombo-font            rgb(0,0,0);
-@define-color entry                  rgb(211,211,211);
-@define-color scaret                 rgb(0,0,0);
-
 @define-color icon                   rgb(100, 100, 100);
 @define-color img-button             rgb(200, 200, 200);
 @define-color img-button-check       rgb(0, 0, 0);
@@ -128,6 +121,17 @@
 @define-color pathbar-color   @combobox;
 @define-color pathbar-select  rgb(175, 175, 175);
 @define-color pathbar-font    rgb(0, 0, 0);
+
+/********** Status Bar ***********************/
+@define-color statusbar              @paned-separator;
+@define-color statusbar-font         rgb(30,30,30);
+@define-color scombo                 rgb(190,150,180);
+@define-color scombo-font            rgb(0,0,0);
+@define-color scombo-arrow           @icon;
+@define-color scombo-imgicon         @scombo-arrow;
+@define-color entry                  rgb(211,211,211);
+@define-color scaret                 rgb(0,0,0);
+
 
 /********* Imports *********/
 @import url("./src/common.css");
